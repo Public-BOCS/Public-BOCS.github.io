@@ -1,0 +1,244 @@
+/* style.css */
+html {
+    background-color: black;
+    color: white;
+}
+/* 导航栏样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    border-bottom: 2px solid DarkOrange;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* 其他样式保持不变 */
+
+/* 为注册/登录按钮添加圆角矩形样式 */
+nav ul li:last-child a {
+    background-color: transparent; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    padding: 3px 6px; /* 按钮内边距 */
+    margin: 10px 0; /* 按钮外边距 */
+    border: 2px solid white; /* 按钮边框 */
+    border-radius: 0px; /* 圆角半径 */
+    text-decoration: none; /* 去掉下划线 */
+    display: inline-block; /* 使按钮成为一个块级元素 */
+    transition: background-color 0.3s ease,border-color 0.3s ease; /* 按钮的过渡效果 */
+}
+
+nav ul li:last-child a:hover {
+    background-color: white; /* 鼠标悬停时的背景颜色 */
+    border-color: white; /* 鼠标悬停时的边框颜色 */
+    color: #333;     /* 鼠标悬停时的文字颜色 */
+}
+
+
+/* 背景图和标语样式 */
+.hero {
+    background-color: black; /* 背景颜色 */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px; /* 根据需要调整高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* 调整高度 */
+    }
+    nav ul li:last-child a {
+        padding: 5px 8px; /* 调整按钮内边距 */
+    }
+}
+/* 标语样式 */
+.slogan {
+    text-align: center; /* 居中对齐 */
+    margin: 20px 0; /* 上下外边距 */
+}
+
+.slogan p {
+    font-size: 1.5em; /* 字体大小 */
+    color: #333; /* 文字颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+/* 词条板块样式 */
+.entries-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px; /* 增加子元素之间的间距 */
+    margin-bottom: 20px; /* 增加底部外边距 */
+}
+
+.entries {
+    width: 48%; /* 每个词条板块占据约一半的宽度 */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entries h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0078d7;
+}
+
+.entry p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 词条板块1的特定样式 */
+.entries-1 {
+    background-color: #e0f7fa; /* 不同的背景颜色 */
+}
+
+/* 词条板块2的特定样式 */
+.entries-2 {
+    background-color: #fce4ec; /* 不同的背景颜色 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    gap: 20px;
+}
+
+.logo1 {
+    width: 512px; /* 原始宽度为512px */
+    height: 512px; /* 原始高度为512px */
+    transform: scale(0.3); /* 缩放到原始尺寸的25% */
+    margin-bottom: 0%; /* 底部外边距 */
+}
+
+@keyframes animloader71 {
+    0% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+  }
+  
+  .loader-71 {
+    position: relative;
+    width: 20%;
+    height: 4.8px;
+    background: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  
+    &::after {
+      content: "";
+      width: 50px;
+      height: 4.8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      -webkit-animation: animloader71 0.75s linear infinite;
+      animation: animloader71 0.75s linear infinite;
+    }
+  }
+
+  @keyframes barStripe {
+    0% {
+      background-position: 1em 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .loader-78 {
+    width: 100%;
+    height: 12px;
+    background-color: darkorange;
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    font-size: 30px;
+    background-size: 1em 1em;
+    -webkit-animation: barStripe 1s linear infinite;
+    animation: barStripe 1s linear infinite;
+  }
