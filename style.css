@@ -1,7 +1,13 @@
 /* style.css */
+@font-face {
+    font-family: "RajdhaniMedium";
+    src: url("./fonts/RajdhaniMedium.otf");
+  }
+  
 html {
     background-color: black;
     color: white;
+    font-family:  "RajdhaniMedium";
 }
 /* 导航栏样式 */
 body {
