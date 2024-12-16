@@ -182,6 +182,8 @@ nav ul li:last-child a:hover {
     justify-content: center;
     align-items: center;
     align-content: stretch;
+    height: 100%;
+    width: 100%;
     gap: 20px;
 }
 
@@ -189,7 +191,7 @@ nav ul li:last-child a:hover {
     width: 512px; /* 原始宽度为512px */
     height: 512px; /* 原始高度为512px */
     transform: scale(0.3); /* 缩放到原始尺寸的25% */
-    margin-bottom: 0%; /* 底部外边距 */
+    margin-bottom: 0px; /* 底部外边距 */
 }
 
 @keyframes animloader1 {
@@ -242,3 +244,23 @@ nav ul li:last-child a:hover {
     -webkit-animation: barStripe 1s linear infinite;
     animation: barStripe 1s linear infinite;
   }
+
+/* style.css */
+#dailyQuote {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-style: italic;
+}
+
+#quickLinks a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#quickLinks a:hover{
+    text-decoration: underline;
+}
