@@ -1,13 +1,15 @@
 /* style.css */
 @font-face {
-    font-family: "RajdhaniMedium";
+    font-family: "RM";
     src: url("./fonts/RajdhaniMedium.otf");
   }
   
 html {
     background-color: black;
     color: white;
-    font-family:  "RajdhaniMedium";
+}
+body {
+    font-family: "RM";
 }
 /* 导航栏样式 */
 body {
@@ -108,14 +110,6 @@ nav ul li:last-child a:hover {
     font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        height: 300px; /* 调整高度 */
-    }
-    nav ul li:last-child a {
-        padding: 5px 8px; /* 调整按钮内边距 */
-    }
-}
 /* 标语样式 */
 .slogan {
     text-align: center; /* 居中对齐 */
@@ -198,7 +192,7 @@ nav ul li:last-child a:hover {
     margin-bottom: 0%; /* 底部外边距 */
 }
 
-@keyframes animloader71 {
+@keyframes animloader1 {
     0% {
       left: 0;
       transform: translateX(-100%);
@@ -209,7 +203,7 @@ nav ul li:last-child a:hover {
     }
   }
   
-  .loader-71 {
+  .loader-1 {
     position: relative;
     width: 20%;
     height: 4.8px;
@@ -224,8 +218,8 @@ nav ul li:last-child a:hover {
       top: 0;
       left: 0;
       background: white;
-      -webkit-animation: animloader71 0.75s linear infinite;
-      animation: animloader71 0.75s linear infinite;
+      -webkit-animation: animloader1 0.75s linear infinite;
+      animation: animloader1 0.75s linear infinite;
     }
   }
 
@@ -238,7 +232,7 @@ nav ul li:last-child a:hover {
     }
   }
   
-  .loader-78 {
+  .loader-2 {
     width: 100%;
     height: 12px;
     background-color: darkorange;
