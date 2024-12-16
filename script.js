@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 获取每日一言
     function fetchDailyQuote() {
-        fetch('https://api.quotable.io/random')
+        fetch('https://v1.hitokoto.cn')
             .then(response => response.json())
             .then(data => {
                 const quote = `"${data.content}" - ${data.author}`;
