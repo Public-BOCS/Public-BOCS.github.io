@@ -1,7 +1,7 @@
 /* style.css */
 @font-face {
-    font-family: "RM";
-    src: url("./fonts/RajdhaniMedium.otf");
+    font-family: RM;
+    src: url(./fonts/Rajdhani\ Medium.otf);
   }
   
 html {
@@ -9,7 +9,7 @@ html {
     color: white;
 }
 body {
-    font-family: "RM";
+    font-family: RM;
 }
 /* 导航栏样式 */
 body {
