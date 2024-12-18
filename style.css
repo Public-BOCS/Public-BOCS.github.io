@@ -5,29 +5,28 @@
   }
   
 html {
-    background-color: black;
-    color: white;
-}
-body {
-    font-family: RM;
+    background-color: white;
 }
 /* 导航栏样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: RM;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
     padding: 10px 0;
+    border-radius: 5px;
 }
 
 nav {
     display: flex;
-    background-color: black;
-    border-bottom: 2px solid DarkOrange;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid skyblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -52,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -71,26 +70,26 @@ main {
 /* 为注册/登录按钮添加圆角矩形样式 */
 nav ul li:last-child a {
     background-color: transparent; /* 按钮背景颜色 */
-    color: white; /* 按钮文字颜色 */
+    color: black; /* 按钮文字颜色 */
     padding: 3px 6px; /* 按钮内边距 */
     margin: 10px 0; /* 按钮外边距 */
-    border: 2px solid white; /* 按钮边框 */
-    border-radius: 0px; /* 圆角半径 */
+    border: 2px solid skyblue; /* 按钮边框 */
+    border-radius: 5px; /* 圆角半径 */
     text-decoration: none; /* 去掉下划线 */
     display: inline-block; /* 使按钮成为一个块级元素 */
     transition: background-color 0.3s ease,border-color 0.3s ease; /* 按钮的过渡效果 */
 }
 
 nav ul li:last-child a:hover {
-    background-color: white; /* 鼠标悬停时的背景颜色 */
-    border-color: white; /* 鼠标悬停时的边框颜色 */
-    color: #333;     /* 鼠标悬停时的文字颜色 */
+    background-color: skyblue; /* 鼠标悬停时的背景颜色 */
+    border-color: #333; /* 鼠标悬停时的边框颜色 */
+    color: white;     /* 鼠标悬停时的文字颜色 */
 }
 
 
 /* 背景图和标语样式 */
 .hero {
-    background-color: black; /* 背景颜色 */
+    background-color: white; /* 背景颜色 */
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,7 +97,7 @@ nav ul li:last-child a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #333;
     text-align: center;
 }
 
