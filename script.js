@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const hours = String(now.getHours()).padStart(2, '0');
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const seconds = String(now.getSeconds()).padStart(2, '0');
-        const dateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        const dateTimeString = `${year}年${month}月${day}日的 ${hours}:${minutes}:${seconds}`;
         const dateTimeElement = document.getElementById('currentDateTime');
         if (dateTimeElement) {
             dateTimeElement.textContent = dateTimeString;
