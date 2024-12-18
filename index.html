@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>注意 - 初桐小栈</title>
-    <link rel="stylesheet" href="style.css">
+	<title>错误</title>
+    <style>
+        @font-face {
+            font-family: RM;
+            src: url(./fonts/RajdhaniMedium.otf);
+        }
+        body{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            font-family: RM;
+            color: white;
+            background-color: black;
+        }
+        @keyframes barStripe {
+          0% {background-position: 1em 0;}100% {background-position: 0 0;}
+        }
+
+        .loader {
+        width: 100%;
+        height: 12px;
+        background-color: darkorange;
+        background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+        font-size: 30px;
+        background-size: 1em 1em;
+        -webkit-animation: barStripe 1s linear infinite;
+        animation: barStripe 1s linear infinite;
+        }
+
+    </style>
 </head>                                                                                
 <body>
     <div class="container">
-        <div class="loader-2"></div>
+        <div class="loader"></div>
         <h1>Hoops!</h1>
         <div id="dailyHitokoto"></div>
         <p>此网站正在建设中，暂时不提供访问，敬请谅解！</p>
-        <div class="loader-2"></div>
+        <div class="loader"></div>
     </div>
 
 

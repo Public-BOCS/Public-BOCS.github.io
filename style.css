@@ -93,12 +93,8 @@ nav ul li:last-child a:hover {
     background-image: url("./images/main.jpg");
     background-color: white; /* 背景颜色 */
     background-repeat: no-repeat;
-    background-position: center left;
-    background-size: cover;
-    min-width: 100%;
-    height: auto; /* 根据需要调整高度 */
-    display: inline-block;
-    align-items: center;
+    background-position: center ;
+    align-items: center; 
     justify-content: center;
     color: #333;
     text-align: center;
