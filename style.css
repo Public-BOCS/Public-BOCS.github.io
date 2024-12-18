@@ -89,12 +89,15 @@ nav ul li:last-child a:hover {
 
 /* 背景图和标语样式 */
 .hero {
+    position: relative;
+    background-image: url("./images/main.jpg");
     background-color: white; /* 背景颜色 */
-    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 500px; /* 根据需要调整高度 */
-    display: flex;
+    background-position: center left;
+    background-size: cover;
+    min-width: 100%;
+    height: auto; /* 根据需要调整高度 */
+    display: inline-block;
     align-items: center;
     justify-content: center;
     color: #333;
