@@ -8,6 +8,7 @@ html {
     background-color: white;
 }
 /* 导航栏样式 */
+
 body {
     font-family: RM;
 }
@@ -17,6 +18,7 @@ header {
     color: black;
     padding: 10px 0;
     border-radius: 5px;
+    justify-content: center;
 }
 
 nav {
@@ -85,7 +87,6 @@ nav ul li:last-child a:hover {
 /* 背景图和标语样式 */
 .hero {
     background-image: url(./images/main.jpg);
-    background-size: position;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -124,16 +125,15 @@ nav ul li:last-child a:hover {
 .entries-container {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
     gap: 20px; /* 增加子元素之间的间距 */
-    margin-bottom: 20px; /* 增加底部外边距 */
 }
 
 .entries {
-    width: 48%; /* 每个词条板块占据约一半的宽度 */
+    width: 20%; /* 每个词条板块占据约一半的宽度 */
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -186,12 +186,6 @@ nav ul li:last-child a:hover {
     gap: 20px;
 }
 
-.logo1 {
-    width: 512px; /* 原始宽度为512px */
-    height: 512px; /* 原始高度为512px */
-    transform: scale(0.3); /* 缩放到原始尺寸的25% */
-    margin-bottom: 0px; /* 底部外边距 */
-}
 
 /* style.css */
 #dailyHitokoto {
@@ -221,4 +215,12 @@ nav ul li:last-child a:hover {
     margin-top: 20px;
     font-family: RM;
     font-style: italic;
+}
+
+.dest{
+    font-size: 25px;
+    color: #555;
+    margin-top: 20px;
+    margin-left: 10vh;
+    font-family: RM;
 }
