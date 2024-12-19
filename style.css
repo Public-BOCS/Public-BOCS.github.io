@@ -105,6 +105,7 @@ nav ul li:last-child a:hover {
 .slogan {
     text-align: center; /* 居中对齐 */
     margin: 20px 0; /* 上下外边距 */
+    background-color: white; /* 背景颜色 */
 }
 
 .slogan p {
@@ -189,21 +190,21 @@ nav ul li:last-child a:hover {
 #dailyHitokoto {
     display: inline-block;
     font-size: 20px;
-    color: skyblue;
-    margin-top: 20px;
+    color: white;
     font-family: none;
     font-style: italic;
     padding: 10px 10px;
     margin: 10px 10px;
-    border: #555 solid 2px;
+    backdrop-filter: blur(3px) brightness(90%);
+    background-color: rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #dailyHitokoto:hover {
     background-color: skyblue;
-    border-color: #333;
+    border-color: 2px solid#333;
     color: white;
 }
 

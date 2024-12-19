@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // 显示当前时间（精确到秒）和日期
     function displayCurrentDateTime() {
@@ -23,19 +21,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 获取并显示每日一言
     function fetchDailyHitokoto() {
-        fetch('https://v1.hitokoto.cn')
-            .then(response => response.json())
-            .then(data => {
+        const cachedHitokoto = localStorage.getItem('dailyHitokoto');
+        const cachedTimestamp = localStorage.getItem('dailyHitokotoTimestamp');
+
+        if (cachedHitokoto && cachedTimestamp) {
+            const now = new Date();
+            const cacheDate = new Date(Number(cachedTimestamp));
+
+            if (now - cacheDate < 86400000) { // 24小时
                 const hitokotoElement = document.getElementById('dailyHitokoto');
                 if (hitokotoElement) {
-                    hitokotoElement.textContent = `"${data.hitokoto}" -- ${data.from_who}`;
+                    hitokotoElement.textContent = cachedHitokoto;
                 }
+                return;
+            }
+        }
+
+        fetch('https://v1.hitokoto.cn') 
+            .then(response => response.json())
+            .then(data => {
+                const hitokotoString = `"${data.hitokoto}" -- ${data.from_who}`;
+                const hitokotoElement = document.getElementById('dailyHitokoto');
+                if (hitokotoElement) {
+                    hitokotoElement.textContent = hitokotoString;
+                }
+                localStorage.setItem('dailyHitokoto', hitokotoString);
+                localStorage.setItem('dailyHitokotoTimestamp', new Date().getTime());
             })
             .catch(error => {
                 console.error('无法获取每日一言:', error);
                 const hitokotoElement = document.getElementById('dailyHitokoto');
                 if (hitokotoElement) {
-                    hitokotoElement.textContent = '每日一言加载失败，请稍后再试。';
+                    hitokotoElement.textContent = '每日一言加载失败，请稍后再试';
                 }
             });
     }
