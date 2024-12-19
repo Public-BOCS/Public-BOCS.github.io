@@ -27,10 +27,12 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     align-items: center;
+    min-width: 95%;
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
     position:fixed;
+    z-index: 99999999;
 }
 
 nav .logo img {
@@ -82,6 +84,10 @@ nav ul li:last-child a:hover {
 
 /* 背景图和标语样式 */
 .hero {
+    background-image: url(./images/main.jpg);
+    background-size: position;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     height: 100vh;
     width: 100%;
