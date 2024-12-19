@@ -116,6 +116,7 @@ nav ul li:last-child a:hover {
 
 /* 词条板块样式 */
 .entries-container {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
