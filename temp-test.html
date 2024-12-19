@@ -3,18 +3,50 @@
 <head>
 	<title>Temp Test</title>
     <style>
-        .hr {
-            background-image: url(./images/main.jpg)"";
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-image: url(./images/main.jpg);
+            background-size: cover;
             border: none;
-            border-top: 1px solid black;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
         }
-    </style>
+    </style> 
 </head>
 <body>
-	<div class="hr">
-        <p>This is a temporary test page for testing purposes.</p>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="网站Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">首页</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="https://www.mediafire.com/folder/ise1f82kyg8nd/Share_Folder" target="_blank">下载中心</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="https://hatukiper.mysxl.cn" target="_blank">联系我们</a></li>
+                <li><a href="https://login.live.com" target="_blank">注册/登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div> 
+                <h1>欢迎来到 <i>初桐小栈</i></h1>
+                <p>现在是 <span id="currentDateTime"></span></p>
+                <div id="dailyHitokoto"></div>
+            </div>
+        </div>
+        <div class="slogan">
+            <p>“白茶清欢无别事,<br>一点秋雨一点凉。"</br> </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

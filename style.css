@@ -10,12 +10,10 @@ html {
 /* 导航栏样式 */
 body {
     font-family: RM;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:none;
     color: black;
     padding: 10px 0;
     border-radius: 5px;
@@ -23,8 +21,8 @@ header {
 
 nav {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-bottom: 2px solid skyblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 3.5px solid skyblue;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
@@ -32,6 +30,7 @@ nav {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    position:fixed;
 }
 
 nav .logo img {
@@ -59,12 +58,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
 /* 其他样式保持不变 */
 
 /* 为注册/登录按钮添加圆角矩形样式 */
@@ -90,14 +83,14 @@ nav ul li:last-child a:hover {
 /* 背景图和标语样式 */
 .hero {
     position: relative;
-    background-image: url("./images/main.jpg");
-    background-color: white; /* 背景颜色 */
-    background-repeat: no-repeat;
-    background-position: center ;
-    align-items: center; 
-    justify-content: center;
-    color: #333;
+    height: 100vh;
+    width: 100%;
+    border: none;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero h1 {
