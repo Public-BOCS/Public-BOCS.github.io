@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (cachedHitokoto && cachedTimestamp) {
             const now = new Date();
             const cacheDate = new Date(Number(cachedTimestamp));
+            const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const cacheStartOfDay = new Date(cacheDate.getFullYear(), cacheDate.getMonth(), cacheDate.getDate());
 
-            if (now - cacheDate < 86400000) { // 24小时
+            if (now - cacheStartOfDay < 86400000) { // 24小时
                 const hitokotoElement = document.getElementById('dailyHitokoto');
                 if (hitokotoElement) {
                     hitokotoElement.textContent = cachedHitokoto;
