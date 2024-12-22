@@ -3,22 +3,23 @@
     font-family: RM;
     src: url(./fonts/RajdhaniMedium.otf);
   }
-  
+
+@font-face {
+    font-family: yoz;
+    src: url(./fonts/yoz.ttf);
+}
+
+@font-face {
+    font-family: ss;
+    src: url(./fonts/SmileySans-Oblique.ttf);
+}
 html {
     background-color: white;
 }
 /* 导航栏样式 */
 
 body {
-    font-family: RM;
-}
-
-header {
-    background-color:none;
-    color: black;
-    padding: 10px 0;
-    border-radius: 5px;
-    justify-content: center;
+    font-family: ss;
 }
 
 nav {
@@ -29,29 +30,35 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     align-items: center;
+    height: 40px;
     min-width: 95%;
-    max-width: 1200px;
-    margin: auto;
     padding: 0 20px;
     position:fixed;
-    z-index: 99999999;
+    z-index: 100;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
 }
 
 nav .logo img {
-    height: 40px;
+    display: inline-block;
+    height: 100px;
+    width: auto;
 }
 
 nav .logo span {
+    font-size: 14px;
     background-color: lightskyblue;
-    display: inline-block;
     padding: 3px 6px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     margin-left: 10px;
     font-size: 16px;
     color: #333;
-    justify-items: center;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1.25;
 }
 
 nav ul {
@@ -109,7 +116,7 @@ nav ul li:last-child a {
 
 nav ul li:last-child a:hover {
     background-color: skyblue; /* 鼠标悬停时的背景颜色 */
-    border-color: #333; /* 鼠标悬停时的边框颜色 */
+    border-color: 2px solid #333; /* 鼠标悬停时的边框颜色 */
     color: white;     /* 鼠标悬停时的文字颜色 */
 }
 
@@ -130,6 +137,10 @@ nav ul li:last-child a:hover {
     flex-direction: column;
 }
 
+.hero img {
+    height: 250px;
+    width: auto;
+}
 .hero h1 {
     font-size: 3em;
 }
@@ -146,6 +157,7 @@ nav ul li:last-child a:hover {
 }
 
 .slogan p {
+    font-family: yoz;
     font-size: 1.5em; /* 字体大小 */
     color: #333; /* 文字颜色 */
     font-weight: bold; /* 加粗字体 */
@@ -163,6 +175,7 @@ nav ul li:last-child a:hover {
 }
 
 .entries {
+    font-family: RM;
     width: 25%; /* 每个词条板块占据约1/4的宽度 */
     height:auto;
     padding: 10px;
@@ -238,8 +251,9 @@ nav ul li:last-child a:hover {
 #dailyHitokoto {
     display: inline-block;
     font-size: 20px;
-    color: white;
-    font-family: none;
+    color: #555;
+    font-family: yoz;
+    font-weight: bold;
     font-style: italic;
     padding: 10px 10px;
     margin: 10px 10px;
@@ -269,7 +283,7 @@ nav ul li:last-child a:hover {
     color: #555;
     margin-top: 20px;
     margin-left: 10vh;
-    font-family: RM;
+    font-family: ss;
 }
 
 footer {

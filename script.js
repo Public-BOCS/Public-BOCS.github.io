@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
             const cacheStartOfDay = new Date(cacheDate.getFullYear(), cacheDate.getMonth(), cacheDate.getDate());
 
-            if (now - cacheStartOfDay < 86400000) { // 24小时
+            if (now - cacheStartOfDay < 24 * 60 * 60 * 1000) { // 24小时
                 const hitokotoElement = document.getElementById('dailyHitokoto');
                 if (hitokotoElement) {
                     hitokotoElement.textContent = cachedHitokoto;
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://v1.hitokoto.cn') 
             .then(response => response.json())
             .then(data => {
-                const hitokotoString = `"${data.hitokoto}" -- ${data.from_who}`;
+                const hitokotoString = `『“${data.hitokoto}” -- ${data.from_who}』`;
                 const hitokotoElement = document.getElementById('dailyHitokoto');
                 if (hitokotoElement) {
                     hitokotoElement.textContent = hitokotoString;
